@@ -2,7 +2,7 @@
     "name": "project-fakerjs",
     "version": "1.0.0",
     "engines": {
-        "node": "18.x"
+        "node": "16.x"
     },
     "description": "FullSail-Project Faker JS",
     "source": "src/index.html",
