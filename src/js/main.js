@@ -22,7 +22,9 @@ const buildUser = (userData) => {
     buildUser(userProfile);
 
     mapboxgl.accessToken =
-        "pk.eyJ1IjoiaGF6ZXk4NyIsImEiOiJjbGFsdzUzYzkwOXBjM3FudGZ1ejUzazdvIn0.vY9_up6mCWaLDl1WuX1eDw";
+        process.env.NODE_ENV === "production"
+            ? process.env.API_KEY_MAPBOX
+            : "broken";
     const map = new mapboxgl.Map({
         container: "mapContainer", // container ID
         style: "mapbox://styles/hazey87/clalzmyui000j15qr0pb7cicy", // style URL
@@ -33,3 +35,6 @@ const buildUser = (userData) => {
 })();
 // "mapbox://styles/hazey87/clalzmyui000j15qr0pb7cicy", // style URL
 // "mapbox://styles/mapbox/streets-v11", // style URL
+
+/*   "pk.eyJ1IjoiaGF6ZXk4NyIsImEiOiJjbGFsdzUzYzkwOXBjM3FudGZ1ejUzazdvIn0.vY9_up6mCWaLDl1WuX1eDw"
+ */
