@@ -5,13 +5,18 @@
     "source": "src/index.html",
     "scripts": {
         "start": "parcel",
-        "build": "build parcel",
+        "build": "parcel build",
         "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Hazey8709/Project-fakerJS"
     },
     "author": "Hazey",
     "license": "ISC",
     "dependencies": {
         "@faker-js/faker": "^7.6.0",
+        "mapbox-gl": "^2.11.0",
         "parcel": "^2.8.0"
     }
 }
