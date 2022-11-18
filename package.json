@@ -8,7 +8,7 @@
     "source": "src/index.html",
     "scripts": {
         "start": "parcel",
-        "build": "build parcel",
+        "build": "parcel build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
