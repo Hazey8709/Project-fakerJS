@@ -2,9 +2,6 @@
     "name": "project-fakerjs",
     "version": "1.0.0",
     "description": "FullSail-Project Faker JS",
-    "engines": {
-        "node": "18.12.1"
-    },
     "source": "src/index.html",
     "scripts": {
         "start": "parcel",
